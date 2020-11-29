@@ -18,7 +18,9 @@ Java课程作业项目仓库
 先创建student类和Test类，重新写了student类，定义txt2String方法读取文件，定义一个BufferedReader对象来读取文件，使用while语句，用readLine语句读取文件，一次读一行，定义字符串变量s，按行读取文件，读到空行，停止读取，再关闭文件，捕捉异常，若出现错误，返回错误的行数，一字符串形式返回对象，定义布尔类型的写入文件方法，设置布尔型变量flag的值为false,定义新的PrintWriter对象，写入内容后关闭文件,改变flag的值为true，捕捉异常后返回flag,写main方法，通过Scanner方法建立对象，并获取用户输入键盘值，来完成交互操作，让用户自主填写个人信息，并打印个人信息，把读取的内容通过.toCharArray()方法转换为数组，定义空字符串，用for语句把数组的每一个元素赋值给s，并利用if语句查找能整除7不能整除2的字符位置，加上逗号，能被2整除也能被7整除的位置加上句号，用while(true)语句写入选择功能，用户通过键盘输入，选择查询字或词的出现次数或退出程序，利用switch语句完成功能的选择，通过indexOf语句查找用户输入的指定字或词，找到后count变量加1，如果选择功能输入错误，输入default语句，如果选择功能每输入int型，输出catch语句。
 ## 四.核心代码
 对文本文件进行标点符号的添加
-![](https://github.com/001221lry/Java-5/blob/main/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20201129220445.png)
+![](https://github.com/001221lry/Java-5/blob/main/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20201129213709.png)
 ## 五.实验结果
 ![](https://github.com/001221lry/Java-5/blob/main/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20201129220513.png)
 ![](https://github.com/001221lry/Java-5/blob/main/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20201129220445.png)
+## 六.实验感悟
+通过本次实验，学会了文件的读写，掌握了异常处理的结构，能更快的调试代码，学会建立BufferedReader新的对象读取文件，建立PrintWriter新的对象写入文件，实现更多强大功能。
