@@ -8,9 +8,9 @@ public class text {
     public static String txt2String(File file) {
         StringBuilder result = new StringBuilder();
         try {
-            BufferedReader br = new BufferedReader(new FileReader(file));//¹¹ÔìÒ»¸öBufferedReaderÀàÀ´¶ÁÈ¡ÎÄ¼ş
+            BufferedReader br = new BufferedReader(new FileReader(file));//æ„é€ ä¸€ä¸ªBufferedReaderç±»æ¥è¯»å–æ–‡ä»¶
             String s = null;
-            while ((s = br.readLine()) != null) {//Ê¹ÓÃreadLine·½·¨£¬Ò»´Î¶ÁÒ»ĞĞ
+            while ((s = br.readLine()) != null) {//ä½¿ç”¨readLineæ–¹æ³•ï¼Œä¸€æ¬¡è¯»ä¸€è¡Œ
                 result.append(System.lineSeparator() + s);
             }
             br.close();
@@ -34,19 +34,19 @@ public class text {
         return flag;
     }
     public static void main(String args[]) {
-        File file = new File("C:\\Users\\pc\\Desktop\\A.txt");
+        File file = new File("C:\\Users\\pc\\Desktop\\B.txt");
         Student abc = new Student();
 
-        System.out.println("ÇëÊäÈëĞÕÃû£º");
+        System.out.println("è¯·è¾“å…¥å§“åï¼š");
         Scanner name = new Scanner(System.in);
         abc.setName(name.nextLine());
-        System.out.println("ÇëÊäÈëÑ§ºÅ£º");
+        System.out.println("è¯·è¾“å…¥å­¦å·ï¼š");
         Scanner student_number = new Scanner(System.in);
         abc.setStudent_number(student_number.nextInt());
-        System.out.println("ÇëÊäÈëÄêÁä£º");
+        System.out.println("è¯·è¾“å…¥å¹´é¾„ï¼š");
         Scanner age = new Scanner(System.in);
         abc.setAge(age.nextLine());
-        System.out.println("ÇëÊäÈë°à¼¶£º");
+        System.out.println("è¯·è¾“å…¥ç­çº§ï¼š");
         Scanner class_name = new Scanner(System.in);
         abc.setClass_name(class_name.next());
         System.out.println(abc);
@@ -55,18 +55,18 @@ public class text {
         for (int i = 2; i < 240; i++) {
             s += chars[i];
             if ((i - 1) % 7 == 0 && (i - 1) % 2 == 0) {
-                s += "¡£" + "\n";
+                s += "ã€‚" + "\n";
             } else if ((i - 1) % 7 == 0 && (i - 1) % 2 != 0) {
                 s += ",";
             }
         }
-        try{b:while(true){System.out.println("Ñ¡Ôñ¹¦ÄÜ£º1.²éÑ¯×Ö»ò´Ê³öÏÖµÄ´ÎÊı¡£2.ÍË³ö³ÌĞò");
+        try{b:while(true){System.out.println("é€‰æ‹©åŠŸèƒ½ï¼š1.æŸ¥è¯¢å­—æˆ–è¯å‡ºç°çš„æ¬¡æ•°ã€‚2.é€€å‡ºç¨‹åº");
          Scanner zi = new Scanner(System.in);
          int q=zi.nextInt();
 
         switch (q) {
             case 1:
-                System.out.println("ÊäÈëÄúÏë²éÑ¯µÄ×Ö»ò´Ê");
+                System.out.println("è¾“å…¥æ‚¨æƒ³æŸ¥è¯¢çš„å­—æˆ–è¯");
                 Scanner j = new Scanner(System.in);
                 String g = j.next();
                 int count = 0;
@@ -75,16 +75,16 @@ public class text {
                         index = index + g.length();
                         count++;
                     }
-                    System.out.println(g + "³öÏÖµÄ´ÎÊı£º" + count);
+                    System.out.println(g + "å‡ºç°çš„æ¬¡æ•°ï¼š" + count);
                 break;
             case 2:break b;
             default:
-                System.out.println("ÇëÊäÈë1»ò2Ñ¡Ôñ¹¦ÄÜ");
+                System.out.println("è¯·è¾“å…¥1æˆ–2é€‰æ‹©åŠŸèƒ½");
         }}}
         catch(Exception w){
-            System.out.println("ÇëÊäÈëÊı×ÖÑ¡Ôñ¹¦ÄÜ£¡£¡£¡");
+            System.out.println("è¯·è¾“å…¥æ•°å­—é€‰æ‹©åŠŸèƒ½ï¼ï¼ï¼");
         }
-        writetxtfile(abc+s, "C:\\Users\\pc\\Desktop\\B.txt");
+        writetxtfile(abc+s, "C:\\Users\\pc\\Desktop\\A.txt");
 
     }
 }
